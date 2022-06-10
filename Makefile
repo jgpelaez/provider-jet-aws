@@ -6,7 +6,7 @@ PROJECT_REPO := github.com/crossplane-contrib/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION := 1.0.5
 export TERRAFORM_PROVIDER_SOURCE := hashicorp/aws
-export TERRAFORM_PROVIDER_VERSION := 3.56.0
+export TERRAFORM_PROVIDER_VERSION := 4.18.0
 export TERRAFORM_PROVIDER_DOWNLOAD_NAME := terraform-provider-aws
 export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX := https://github.com/hashicorp/terraform-provider-aws/releases/download/v3.56.0
 
@@ -49,7 +49,7 @@ GO111MODULE = on
 # ====================================================================================
 # Setup Images
 
-DOCKER_REGISTRY ?= crossplane
+DOCKER_REGISTRY ?= jgpelaez
 IMAGES = provider-jet-aws provider-jet-aws-controller
 -include build/makelib/image.mk
 
